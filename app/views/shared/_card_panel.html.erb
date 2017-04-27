@@ -1,0 +1,14 @@
+<div class="gift-card-home">
+  <div class="background bck-<%= card_name %>"></div>
+  <div class="click-area">
+    <div class="logo logo-<%= card_name %>"></div>
+  </div>
+  <div class="hidden" style="height: 0px; opacity: 0;">
+    <div class="hidden-wrapper">
+      <div class="text">
+        <p><%= t ".#{card_name}_panel_text" %></p>
+      </div>
+      <%= link_to t(".get_your_card"), "/#{card_name}", class: "gift-card-link" %>
+    </div>
+  </div>
+</div>

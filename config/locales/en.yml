@@ -1,23 +1,109 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  dictionary:
+    google_play: &google_play Google Play
+    google_play_store: &google_play_store Google Play Store
+    xbox: &xbox Xbox
+    xbox_store: &xbox_store Xbox Store
+    steam: &steam Steam
+    steam_store: &steam_store Steam Store
+    playstation: &playstation Playstation
+    playstation_store: &playstation_store Playstation Store
+    spotify: &spotify Spotify
+    spotify_app: &spotify_store Spotify app
+    itunes: &itunes Itunes
+    itunes_store: &itunes_store Itunes Store
+    paypal: &paypal PayPal
+    ebay: &ebay eBay
+    amazon: &amazon Amazon
+    app_title: &app_title Get Free Gift Card Code
+  layouts:
+    application:
+      title: *app_title
+      description: Gift Cards Imba Tools is best way to get Free Gift Cards. Now you can get all of your favorite apps and games for free.
+      key: *app_title
+  shared:
+    card_panel:
+      get_your_card: Get yours now
+      google_panel_text: Get free Google Play Gift Card code and redeem for anything in the Google Play Store.
+      xbox_panel_text: Get free Xbox Gift Card code and redeem for anything in the Xbox Store.
+      steam_panel_text: Get free Steam Gift Card code and redeem for anything in the Steam Store.
+      playstation_panel_text: Get free Playstation Gift Card code and redeem for anything in the Playstation Store.
+      spotify_panel_text: Get free Spotify Gift Card code and listen free music on your Spotify app.
+      itunes_panel_text: Get free iTunes Gift Card code and redeem for anything in the iTunes Store.
+      paypal_panel_text: Get free PayPal Gift Card code and buy anything for free on eBay.
+      amazon_panel_text: Get free Amazon Gift Card code and buy anything for free on Amazon.
+    card_detail:
+      google: *google_play
+      google_intro: Get free Google Play Gift Card code and redeem for anything in the Google Play Store.
+      google_how_get: How to get free Google Play Gift Cards
+      google_ans_get:
+        Free Google Play Gift Card codes are very easy to get with our Generator.
+        The only thing you have to do is to choose your Gift Card value and wait
+        for the generator to find unused Gift Card on Google Play server.
+        Get unused codes safely and directly from your web browser.
+      google_how_redeem: How to redeem Google Play Gift Card
+      google_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the Google Play Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      google_possible: We do not generate new codes and push them to the Google Play database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
+      xbox: *xbox
+      xbox_intro: Get free Xbox Gift Card code and redeem for anything in the Xbox Store.
+      xbox_how_get: How to get free Xbox Gift Cards
+      xbox_ans_get:
+        Free Xbox Gift Card codes are very easy to get with our Generator.
+        The only thing you have to do is to choose your Gift Card value and wait
+        for the generator to find unused Gift Card on Xbox server.
+        Get unused codes safely and directly from your web browser.
+      xbox_how_redeem: How to redeem Xbox Gift Card
+      xbox_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the Xbox Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      xbox_possible: We do not generate new codes and push them to the Xbox database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
+      steam: *steam
+      steam_intro: Get free Steam Gift Card code and redeem for anything in the Steam Store.
+      steam_how_get: How to get free Steam Gift Cards
+      steam_ans_get:
+        Free Steam Gift Card codes are very easy to get
+        with our Generator. The only thing you have to do
+        is to choose your Gift Card value and wait for
+        the generator to find unused Gift Card on Steam
+        server. Get unused codes safely and directly from your web browser.
+      steam_how_redeem: How to redeem Steam Gift Card
+      steam_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the Steam Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      steam_possible: We do not generate new codes and push them to the Steam database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
+      playstation: *playstation
+      playstation_intro: Get free PlayStation Gift Card code and redeem for anything in the PlayStation Store.
+      playstation_how_get: How to get free PlayStation Gift Cards
+      playstation_ans_get:
+        Free PlayStation Gift Card codes are very easy to get with our Generator. The only thing you have to do is to choose your Gift Card value and wait for the generator to find unused Gift Card on PlayStation server. Get unused codes safely and directly from your web browser.
+      playstation_how_redeem: How to redeem PlayStation Gift Card
+      playstation_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the PlayStation Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      playstation_possible: We do not generate new codes and push them to the PlayStation database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
+      spotify: *spotify
+      spotify_intro: Get free Spotify Gift Card code and listen free music on your Spotify app.
+      spotify_how_get: How to get free Spotify Gift Cards
+      spotify_ans_get:
+        Free Spotify Gift Card codes are very easy to get with our Generator. The only thing you have to do is to choose your Gift Card value and wait for the generator to find unused Gift Card on Spotify server. Get unused codes safely and directly from your web browser.
+      spotify_how_redeem: How to redeem Spotify Gift Card
+      spotify_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the Spotify Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      spotify_possible: We do not generate new codes and push them to the Spotify database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
+      itunes: *itunes
+      itunes_intro: Get free iTunes Gift Card code and redeem for anything in the iTunes Store.
+      itunes_how_get: How to get free iTunes Gift Cards
+      itunes_ans_get:
+        Free iTunes Gift Card codes are very easy to get with our Generator. The only thing you have to do is to choose your Gift Card value and wait for the generator to find unused Gift Card on iTunes server. Get unused codes safely and directly from your web browser.
+      itunes_how_redeem: How to redeem iTunes Gift Card
+      itunes_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the iTunes Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      itunes_possible: We do not generate new codes and push them to the iTunes database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
+      paypal: *paypal
+      paypal_intro: Get free PayPal Gift Card code and buy anything for free on eBay.
+      paypal_how_get: How to get free PayPal Gift Cards
+      paypal_ans_get:
+        Free PayPal Gift Card codes are very easy to get with our Generator. The only thing you have to do is to choose your Gift Card value and wait for the generator to find unused Gift Card on PayPal server. Get unused codes safely and directly from your web browser.
+      paypal_how_redeem: How to redeem PayPal Gift Card
+      paypal_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the PayPal Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      paypal_possible: We do not generate new codes and push them to the PayPal database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
+      amazon: *amazon
+      amazon_intro: Get free Amazon Gift Card code and buy anything for free on Amazon.
+      amazon_how_get: How to get free Amazon Gift Cards
+      amazon_ans_get:
+        Free Amazon Gift Card codes are very easy to get with our Generator. The only thing you have to do is to choose your Gift Card value and wait for the generator to find unused Gift Card on Amazon server. Get unused codes safely and directly from your web browser.
+      amazon_how_redeem: How to redeem Amazon Gift Card
+      amazon_ans_redeem: Redeem your Gift Card with your mobile, tablet or desktop. Go to the Amazon Store, click at the menu bar and choose Redeem Code. Now you only have to fill in your generated code and that is all, the money will be available on your account.
+      amazon_possible: We do not generate new codes and push them to the Amazon database like other groups, because this can lead to ban of your account. Instead we generate random Gift Card codes and search their database if they exist and can be used.
